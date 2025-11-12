@@ -86,23 +86,3 @@ class Account:
         recipient_account.transactions.append(credit_tx)
         
         return debit_tx, credit_tx
-
-# Example usage
-if __name__ == "__main__":
-    # Create accounts
-    alice = Account("ACC001", Decimal('1000.00'))
-    bob = Account("ACC002", Decimal('500.00'))
-    
-    # Deposit
-    alice.deposit(Decimal('200.00'), "Salary deposit")
-    
-    # Transfer
-    alice.transfer(bob, Decimal('150.00'), "Payment for services")
-    
-    # Withdraw
-    bob.withdraw(Decimal('100.00'), "ATM withdrawal")
-    
-    print(f"Alice balance: ${alice.balance}")
-    print(f"Bob balance: ${bob.balance}")
-    print(f"Alice transactions: {len(alice.transactions)}")
-    print(f"Bob transactions: {len(bob.transactions)}")

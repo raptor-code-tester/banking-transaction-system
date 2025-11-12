@@ -4,7 +4,7 @@ Main script to demonstrate the transaction system with comprehensive test data.
 """
 
 from decimal import Decimal
-from transaction import Account, TransactionType, TransactionStatus
+from src.transaction import Account, TransactionType, TransactionStatus
 
 def print_account_summary(account):
     """Print account balance and transaction history."""
