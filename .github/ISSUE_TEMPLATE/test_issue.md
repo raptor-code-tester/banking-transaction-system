@@ -9,7 +9,7 @@ labels: 'test'
 main
 
 **Description:**
-<!-- What needs to be tested or fixed? -->
+Create a new PR called \"Add tests for transaction.py\" that edits the tests/test_transaction.py file and adds ONE test for the src/transaction.py module.
 
 **Additional Context:**
 <!-- Any other relevant information -->
